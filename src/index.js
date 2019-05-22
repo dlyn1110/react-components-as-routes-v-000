@@ -11,7 +11,10 @@ const Home = () => {
   );
 };
 
-ReactDOM.render(
-  <Home />,
+// Step 2. Changed to have router coordinate what is displayed
+ReactDOM.render((
+  <Router>
+    <Route path="/" render={Home} />
+  </Router>),
   document.getElementById('root')
 );
