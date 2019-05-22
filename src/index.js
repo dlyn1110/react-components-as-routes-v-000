@@ -41,6 +41,8 @@ const Login = () => {
 ReactDOM.render((
   <Router>
     <Route path="/" render={Home} />
+    <Route exact path="/about" render={About} />
+    <Route exact path="/login" render={Login} />
   </Router>),
   document.getElementById('root')
 );
