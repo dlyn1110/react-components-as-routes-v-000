@@ -40,6 +40,7 @@ const Login = () => {
 // Step 2. Changed to have router coordinate what is displayed
 ReactDOM.render((
   <Router>
+   <React.Fragment>
     <Route path="/" render={Home} />
     <Route exact path="/about" render={About} />
     <Route exact path="/login" render={Login} />
